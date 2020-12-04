@@ -1,0 +1,16 @@
+body {
+  background: #222;
+}
+
+h1 {
+  color: #f5f6fa;
+}
+
+h2 {
+  color: #f5f6fa;
+  transition: all 0.5s ease-in-out;
+}
+
+.clicked {
+  color: #c23616;
+}
