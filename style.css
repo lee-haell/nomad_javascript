@@ -14,3 +14,12 @@ h2 {
 .clicked {
   color: #c23616;
 }
+
+.form,
+.greeting {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
