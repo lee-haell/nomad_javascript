@@ -3,3 +3,13 @@ const toDoFrom = document.querySelector(".js-toDoFrom"),
     toDoList = document.querySelector(".js-toDoList");
 
 const SAVE_TODO = "toDo";
+
+
+
+
+function init(){
+    submitToDo();
+    toDoFrom.addEventListener("submit", listOpen);
+}
+
+init();
