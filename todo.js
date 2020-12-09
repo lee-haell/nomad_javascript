@@ -5,7 +5,12 @@ const toDoFrom = document.querySelector(".js-toDoFrom"),
 const SAVE_TODO = "toDo";
 
 
-
+function submitToDo(){
+    const toDoList = localStorage.getItem(SAVE_TODO);
+    if(toDoList !== null){
+    
+    }
+}
 
 function init(){
     submitToDo();
