@@ -1,22 +1,17 @@
 body {
-  background: #222;
+  background: #ccc;
 }
 
 h1 {
-  color: #f5f6fa;
+  color: #222;
 }
 
-h2 {
-  color: #f5f6fa;
-  transition: all 0.5s ease-in-out;
-}
-
-.clicked {
-  color: #c23616;
+h4 {
+  color: #777;
 }
 
 .form,
-.greeting {
+.sayHello {
   display: none;
 }
 
