@@ -5,6 +5,13 @@ const toDoFrom = document.querySelector(".js-toDoFrom"),
 const SAVE_TODO = "toDo";
 
 
+function listOpen(event){
+    event.preventDefault();
+    const listValue = toDoInput.value;
+    writeTodo(listValue);
+    toDoInput.value = ""; //리스트 새로 작성할 때마다 리셋
+}
+
 function submitToDo(){
     const toDoList = localStorage.getItem(SAVE_TODO);
     if(toDoList !== null){
