@@ -4,6 +4,9 @@ const toDoFrom = document.querySelector(".js-toDoFrom"),
 
 const SAVE_TODO = "toDo";
 
+function writeTodo(text){
+    console.log(text);
+}
 
 function listOpen(event){
     event.preventDefault();
