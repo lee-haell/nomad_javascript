@@ -7,14 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- 시계 -->
     <div class="js-clock">
         <h1>00:00</h1>
     </div>
-    <form class="js-form form">
+    <!-- 이름, 인사-->
+    <form class="js-nameForm form">
         <input type="text" placeholder="What is your name?">
     </form>
-    <h4 class="js-greeting greeting"></h4>
+    <h4 class="js-sayHello sayHello"></h4>
+    <!-- 할 일 목록 -->
+    <form class="js-toDoFrom">
+        <input type="text" placeholder="Write a to do!">
+    </form>
+    <ul class="js-toDoList"></ul>
+    <!-- js -->
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
+    <script src="todo.js"></script>
 </body>
 </html>
