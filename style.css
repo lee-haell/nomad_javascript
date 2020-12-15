@@ -1,13 +1,10 @@
 body {
-  background: #ccc;
+  background: #2c3e50;
 }
 
-h1 {
-  color: #222;
-}
-
+h1,
 h4 {
-  color: #777;
+  color: #2c3e50;
 }
 
 .form,
@@ -17,4 +14,23 @@ h4 {
 
 .showing {
   display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
 }
