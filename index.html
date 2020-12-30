@@ -3,27 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>javascript</title>
+    <title>Happy New Year!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 시계 -->
-    <div class="js-clock">
-        <h1>00:00</h1>
+    <section>
+        <!-- 시계 -->
+        <div class="js-clock">
+            <h1>00:00</h1>
+        </div>
+        <h2>2020년 정말 고생 많았어,<br>너의 모든 순간이 건강하고 행복했으면 좋겠어</h2>
+        <h3>👩‍💻 화면을<br>스크롤 해봐!</h3>
+        <article>
+            <!-- 이름, 인사-->
+            <form class="js-nameForm form">
+                <input type="text" placeholder="너의 이름을 적어줘:)">
+            </form>
+            <h4 class="js-sayHello sayHello"></h4>
+            <!-- 할 일 목록 -->
+            <form class="js-toDoFrom">
+                <input type="text" placeholder="2021년의 목표나 메모를 남겨줘:)">
+            </form>
+            <ul class="js-toDoList"></ul>
+        </article>
+    </section>
+    <div class="image">
+        <img src="images/bg.jpg" alt="밤하늘 배경화면" id="bg">
+        <img src="images/moon.png" alt="달" id="moon">
+        <img src="images/cloud1.png" alt="구름1" id="cloud1">
+        <img src="images/cloud2.png" alt="구름2" id="cloud2">
+        <div id="tree"></div>
     </div>
-    <!-- 이름, 인사-->
-    <form class="js-nameForm form">
-        <input type="text" placeholder="What is your name?">
-    </form>
-    <h4 class="js-sayHello sayHello"></h4>
-    <!-- 할 일 목록 -->
-    <form class="js-toDoFrom">
-        <input type="text" placeholder="Write a to do!">
-    </form>
-    <ul class="js-toDoList"></ul>
+    <footer class="footer">
+        <span>* 하트를 클릭하면 작성된 내용이 삭제됩니다 *</span><br>
+        본 웹사이트는 상업용이 아닙니다. 이미지 출처는 
+        <a href="https://www.pexels.com/" target="_blank">Pexels</a>와 
+        <a href="https://drive.google.com/drive/folders/12RBs_nfA_yEuOs72K3oPv1AAVnlaeUsQ" target="_blank">Google Drive</a>를 참고해주세요.
+    </footer>
     <!-- js -->
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
+    <!-- <script src="bg.js"></script> -->
+    <!-- <script src="weather.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to('#moon',{
+            scrollTrigger: {
+                scrub: 1
+            },
+            scale: 1.5
+        })
+        gsap.to('#bg',{
+            scrollTrigger: {
+                scrub: 1
+            },
+            scale: 3
+        })
+        gsap.to('#tree',{
+            scrollTrigger: {
+                scrub: 1
+            },
+            x: -500
+        })
+        gsap.to('#cloud1',{
+            scrollTrigger: {
+                scrub: 1
+            },
+            x: -200
+        })
+        gsap.to('#cloud2',{
+            scrollTrigger: {
+                scrub: 1
+            },
+            x: 300
+        })
+
+
+    </script>
 </body>
 </html>
