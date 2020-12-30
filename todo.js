@@ -29,7 +29,7 @@ function writeTodo(text){
     const span = document.createElement("span"); //span을 새로 추가
     const newId = idNumbers; //id번호를 새로운 id로
     idNumbers += 1; //id 번호 1씩 증가됨
-    deleteBtn.innerText = " ❎ "; //버튼 안에 이모지 추가
+    deleteBtn.innerText = " 💛 "; //버튼 안에 이모지 추가
     deleteBtn.addEventListener("click", deleteToDo); //x버튼을 클릭했을 때 다음 함수를 실행
     span.innerText = text; //span안에 투두리스트 내용
     li.appendChild(deleteBtn); //li의 마지막 자식으로 button 추가
