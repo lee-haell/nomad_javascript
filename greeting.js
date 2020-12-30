@@ -24,7 +24,7 @@ function askForName(){
 function helloUser(text){ 
     nameForm.classList.remove(SHOWING_CLASS); //텍스트 색칠되면 form 안 보이게
     sayHello.classList.add(SHOWING_CLASS); //h4 보이게
-    sayHello.innerText = `Hello ${text}`; //h4 안에 텍스트 추가
+    sayHello.innerText = `${text}'s List ✨`; //h4 안에 텍스트 추가
 }
 
 
