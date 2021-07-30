@@ -1,6 +1,6 @@
 # Nomad_JavaScript
 
-* Vanila JS로 Chrome App 만들기
+* Vanilla JS로 Chrome App 만들기
 
     <br>
 
